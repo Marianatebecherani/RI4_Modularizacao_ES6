@@ -2,11 +2,13 @@
  * RI 4 - Módulo de Teste e Execução (ES6 Module Import)
  */
 
-// Importa as classes do módulo principal (src/classes.js)
-import { Empresa, Cliente, Endereco, Telefone } from './classes.js';
+// Importa as classes.
+import Empresa from "./Empresa.js";
+import Cliente from "./Cliente.js";
+import Endereco from "./Endereco.js";
+import Telefone from "./Telefone.js";
 
-
-// --- Lógica de Criação e Teste (Objetivo Parte 2) ---
+// --- Lógica de Criação e Teste ---
 
 // a. Cria uma empresa e atribui endereço e 2 telefones.
 const enderecoEmpresa = new Endereco('SP', 'São Paulo', 'Rua Empresarial', '100');
@@ -48,7 +50,7 @@ empresa.adicionarCliente(cliente4);
 empresa.adicionarCliente(cliente5);
 
 
-// d. Geração da descrição da empresa (Objetivo Parte 3).
+// d. Geração da descrição da empresa.
 console.log("===================================================================");
 console.log("                  RI 4: RELATÓRIO MODULARIZADO                  ");
 console.log("===================================================================");
